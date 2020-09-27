@@ -4,3 +4,5 @@ SI.POV.GINI,Gini Index
 NY.GDP.PCAP.KD.ZG,GDP per capita growth (in %)
 SE.XPD.TOTL.GB.ZS,"Government expenditure on education, total (% of government expenditure)"
 SE.XPD.TOTL.GD.ZS,"Government expenditure on education, total (% of GDP)"
+SI.DST.FRST.10,Income share held by lowest 10%
+SI.DST.10TH.10,Income share held by highest 10%
