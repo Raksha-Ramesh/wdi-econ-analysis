@@ -1,13 +1,21 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
-\usepackage{cite}
+%\usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{verbatim}
+\usepackage{biblatex}
+
+%to add images
+\usepackage{graphicx}
+\graphicspath{{Images/}}
+
+\addbibresource{references.bib}
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -86,18 +94,18 @@ Government expenditure on education (\% of total government expenditure).
 \section{Review of Literature}
 
 \subsection{Are We on the Right Path to Achieve the Sustainable Development Goals?}
-The aim of this research paper authored by Jonathan D. Moyer and Steve Hedden, was to analyse if the world was on the right track to achieving the targets for the Sustainable Development Goals, set by the UN in 2015, for 2030. The SDGs are an integrated framework of human, social and economic developmental objectives, consisting of 17 goals with 169 targets and over 230 specific indicators. This paper deals with 9 such targets, bringing out a comparison between 186 countries and tries to forecast the scenario in 2030, using the International Futures (IF) forecasting model to do the same. The targets considered by the authors include indicators for poverty, child mortality and morbidity, undernourishment, access to safe water and sanitation, education and electricity. The datasets used for analysis and forecasting differ with each target, and have been taken from UNICEF, WHO and the World Bank's WDI datasets designated for SDG analysis.\newline
-The scenario analysis was done using the SSP2, or the Shared Socioeconomic Pathways. They include five scenarios that frame potential global development trajectories originally developed to capture the uncertainties around climate change adaptation and mitigation and allow for cross-model collaboration.
+The aim of this research paper \cite{SDG}, was to analyse if the world was on the right track to achieving the targets for the Sustainable Development Goals, set by the UN in 2015, for 2030. The paper tries to forecast the scenario in 2030, using the International Futures (IF) forecasting model to do the same. The targets considered by the authors include indicators for poverty, child mortality and morbidity, undernourishment, access to safe water and sanitation, education and electricity. The datasets used for analysis and forecasting differ with each target, and have been taken from UNICEF, WHO and the World Bank's WDI datasets designated for SDG analysis.\newline
+The scenario analysis was done using the SSP2, or the Shared Socioeconomic Pathways. They include five scenarios that frame potential global development trajectories and allow for cross-model collaboration.
 
-The SSP2 scenario analysis done by the authors provided a glimpse of a moderately optimistic world in 2030 (it was imperative to note that exogenous factors were not considered in this study, and may hence change the outcome) in which economies grow and convergence of low and high economic countries are prevalent. The variable undernourished child target shows the least improvement of only an additional 6.5\% countries, as compared to primary school completion and access to water, both of which show immense improvements, with 76\% and 72\% countries achieving the targets respectively. It also provides a country and continent wise analysis, inferring that although the SDG targets chosen may be reached by minimum 40-50\% of countries overall, African countries still fare the worst and don't achieve multiple, if any targets and are aptly termed MVCs, or Most Vulnerable Countries.
+The SSP2 scenario analysis done by the authors provided a glimpse of a moderately optimistic world in 2030 in which economies grow and convergence of low and high economic countries are prevalent. The indicator "undernourished child" showed the least improvement of only an additional 6.5\% countries, as compared to primary school completion and access to water, both of which show immense improvements, with 76\% and 72\% countries achieving the targets respectively. It also provides a country and continent wise analysis, inferring that although the SDG targets chosen may be reached by minimum 40-50\% of countries overall, African countries still fare the worst and don't achieve multiple, if any targets and are aptly termed MVCs, or Most Vulnerable Countries.
 
-The study conclusively showed that, without considering exogenous factors, the world (i.e all 186 countries analysed) is on its way to achieve two out of the nine targets by 2030 - primary school completion and child mortality. It also tries to provide possible reasons as to why there was/wasn’t an improvement with respect to the targets, for example, there was an improvement with access to water but not as much with sanitation. 
+The study conclusively showed that, without considering exogenous factors, the world (i.e all 186 countries analysed) is on its way to achieve two out of the nine targets by 2030 - primary school completion and a decrease in child mortality. 
 
 In conclusion, this paper proves to be an incredibly strong starting point, as the dataset used here and in our problem statements seem to intersect. Along with this, the target variables analysed in this study might also be very influential with respect to our problem statement at hand. In addition to this, the study also is a great reference for models like SSPs and IFs, although both have cons that would hinder their usage and application. The study also fails to consider exogenous variables, which proves to be a deterrent to the credibility of the results obtained. All in all, it can be viewed as a foundation for our analysis, giving a brief idea as to how macroeconomic and socioeconomic analysis is done, in order for us to improve, develop further and newer insights by bringing in other indicators into the foray.
 
 \subsection{Forecasting Egyptian GDP Using ARIMA Models}
 
-This paper, authored by Mohamed Reda Abonazel and Ahmed Ibrahim Abd-Elftah, seeks to forecast the Egyptian GDP and perform time-series analysis on the same using well known methods like the ARIMA using the Box-Jenkins approach to do the same, as well as running diagnostic tests to check for most optimal parameters and homoscedasticity of residuals. Forecasting GDP helps to gain insights as to what can be done to further improve the economy of a country. This paper uses data from the World Bank over the last 5 decades (from 1965 to 2016) for analysis and forecasting, 52 data points to be precise. 
+This paper\cite{forecastegypt}, seeks to forecast the Egyptian GDP and perform time-series analysis on the same using well known methods like the ARIMA using the Box-Jenkins approach to do the same, as well as running diagnostic tests to check for most optimal parameters and homoscedasticity of residuals. This paper uses data from the World Bank over the last 5 decades (from 1965 to 2016) for analysis and forecasting, 52 data points to be precise. 
 
 The exploratory analysis done shows that the time-series in this case is non-stationary, and hence, differencing has to be applied to the dataset (the ARIMA model is used). The study shows that a difference factor of 2 works best in this case, converting the time-series into a stationary one. Following this, the p and q parameters are estimated using the ACF and PACF plots to each be equal to 1.
 The equation for the ARIMA(1,2,1) model is found to be
@@ -121,6 +129,26 @@ Please do not revise any of the current designations.
 \end{comment}
 
 \subsection{\textbf{ADD THE OTHER TWO PAPERS HERE!!!!}}
+
+\section{Dataset}
+
+
+\section{Initial Insights}
+Before deciding on how to go about forecasting and making predictions, 
+exploratory data analysis and cleaning was performed on all the datasets in order to 
+understand the nature of the data. 
+
+Given the large amount of data, dating way back to the 60s, it was correctly assumed that the data representing most of the indicators was incredibly sparse. For indicators like Government expenditure on education and Unemployment, there was barely any or no data recorded until the late 90s or 2000s. In addition to this, using recent data (the last two decades or so) would be able to provide much more relevant insights than data from half a century ago. In order to perform dimensionality reduction, feature selection was used to drop the attributes with more than 
+70\% of the data missing. This was done for almost all the indicators, except for population growth and birth and death rates. 
+
+Along with this, a lot of countries had almost no data recorded as well. When looked at from a bird’s eye view, it seems that most of these countries with no data are not big players on the international platform, but rather place like Gibraltar, St. Martin, San Marino, etc. It is important to note that most of our exploratory data analysis revolves around the World at large, or drawing comparisons between India and other global heavyweights like the United States, China, Germany, etc. As this is the case, only these relevant rows were considered for analysis, effectively getting rid of most of the unwanted data.
+
+In the dataset “\% of government expenditure on education”, dimensionality reduction was used to drop attributes since they had ~80\% missing values. This was the time period ranging from 1960 - 2000. For the subsequent years, there were quite a few missing values in the dataset. If the number of missing values was >  8 (2001-2016 is a time period of 16 years), the country was discarded from making estimations. If above 8, to account for this, the missing value was appended with the mean value of the country’s expenditure between 2001 - 2016. 
+In the Unemployment indicator, China had two missing values: for the years 2015 and 2016. As these are values that are already accounted for by various other agencies, forecasting them would be redundant. So, the appropriate values were filled in by cross checking with other data online. 
+
+
+
+\section{Proposed Solution}
 
 \section{Prepare Your Paper Before Styling}
 Before you begin to format your paper, first write and save the content as a 
@@ -291,6 +319,9 @@ an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B.
 G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
 acknowledgments in the unnumbered footnote on the first page.
 
+\printbibliography
+
+\begin{comment}
 \section*{References}
 
 Please number citations consecutively within brackets \cite{b1}. The 
@@ -312,6 +343,7 @@ element symbols.
 For papers published in translation journals, please give the English 
 citation first, followed by the original foreign-language citation \cite{b6}.
 
+
 \begin{thebibliography}{00}
 \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
 \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
@@ -321,6 +353,15 @@ citation first, followed by the original foreign-language citation \cite{b6}.
 \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
 \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
 \end{thebibliography}
+
+\end{comment}
+
+% \printbibliography
+
+% \bibliographystyle{ACM-Reference-Format}
+% \bibliography{references}
+
+
 \vspace{12pt}
 \color{red}
 IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
