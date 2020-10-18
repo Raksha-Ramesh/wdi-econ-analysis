@@ -51,12 +51,14 @@ like multiple linear regression using ordinary least squares to gain insights
 into the numerous and diverse factors that affect economies 
 of all countries globally, from quite obvious factors like 
 Trade and the Finance Sector, to other parameters like Poverty, 
-Gender and Urban \& Social Development. The data is obtained from the 
-World Bank's list of World Development Indicators, collected over the 
-last six decades. 
+Gender and Urban \& Social Development, using data obtained from the 
+World Bank's reserve of World Development Indicators, collected over the 
+last six decades. A comparison between country groups is performed using 
+the standardized regression coefficients to check for contrasts between 
+developed and developing countries.
 
 Analysis of these variables on a macroeconomic scale is imperative in 
-order to gain insight as to how developed and developing nations fare, 
+order to gain insight on the current global scenario, 
 and to see if minor improvements in any sector would lead to 
 monumental change and growth overall. \\
 \end{abstract}
@@ -113,7 +115,7 @@ The proxy for economic growth was the growth rate of GDP per capita, which was t
 
 The results were checked for multicollinearity using the variance inflation factor (VIF), which showed that the results didn’t have multicollinearity.The results showed that the increase in the volume of exports, production of natural resources, life expectancy and investment had positive effects on the economy. Therefore,to improve the economic growth of a nation, policies promoting these factors should be encouraged.
 
-This paper gave an exemplary insight into the approach that can be employed to find a solution to  our problem problem statement. The detail with which the approach was explained provided us with a foundation from which we can build our own strategy upon, that pertains to our requirements. In this paper, validation was done by comparing the results of all the countries of one year to the next. We plan on employing a similar technique but instead of running the model over all the countries, we would break them up into sets of related countries (by level of development, locations, etc) and compare their results with those of the next year. We would also analyse the effect of uncommon predictors on the model and their influence on developing and developed countries. All in all, this paper tackled a very similar problem statement using a dataset that was mostly coherent with ours, serving as a context with which we can build our approach. 
+This paper gave an exemplary insight into the approach that can be employed to find a solution to  our problem statement. The detail with which the approach was explained provided us with a foundation from which we can build our own strategy upon, that pertains to our requirements. In this paper, validation was done by comparing the results of all the countries of one year to the next. We plan on employing a similar technique but instead of running the model over all the countries, we would break them up into sets of related countries (by level of development, locations, etc) and compare their results with those of the next year. We would also analyse the effect of uncommon predictors on the model and their influence on developing and developed countries. All in all, this paper tackled a very similar problem statement using a dataset that was mostly coherent with ours, serving as a context with which we can build our approach. 
 
 
 \subsection{International Futures (IFs) and Integrated, Long-Term Forecasting of Global Transformations}\label{if}
@@ -157,7 +159,7 @@ Income share held by highest, lowest 10\%,
 Government expenditure on education (\% of total government expenditure).
 
 
-Given the large amount of data, dating way back to the 60s, it was correctly assumed that the data representing most of the indicators was incredibly sparse. For indicators like Government expenditure on education and Unemployment, there was barely any or no data recorded until the late 90s or 2000s. In addition to this, using recent data (the last two decades or so) would be able to provide much more relevant insights than data from half a century ago. In order to perform dimensionality reduction, feature selection was used to drop the attributes with more than 
+Given the large amount of data, dating way back to the 60s, it was correctly assumed that the data representing most of the indicators was incredibly sparse. For indicators like government expenditure on education and unemployment, there was barely any or no data recorded until the late 90s or 2000s. In addition to this, using recent data (the last two decades or so) would be able to provide much more relevant insights than data from half a century ago. In order to perform dimensionality reduction, feature selection was used to drop the attributes with more than 
 70\% of the data missing. Other methods of data cleaining, like mean replacement of missing values were also used in order to make the datasets suitable for exploaratory data analysis. Certain specific values had to be manually checked and replaced, like China's GDP per capita growth for 2014 and 2015, as using other methods to estimate this data would be redundant.
 
 \begin{comment}
@@ -236,7 +238,7 @@ The dependencies of the economy on the features in developed nations, when juxta
 
 The solution approach is to determine the impact that  parameters have on the GDP per capita growth, by subjecting these features and target variable to a Multiple Linear Regression model, using Ordinary Least Squares to estimate their respective coefficients. This needs to be done for each country in order to draw a comparison and determine which factors are more likely to influence economic activity in developed and developing nations. 
 
-Parameters considered include population growth, income shares between the top and bottom 10\%, the unemployment rates, education as a percentage of government expenditure, military expenditure, refugee population by country of asylum/origin, financial investments, total reserves and employment grouped by gender. The target variable, as mentioned, needs to be a quantitative representative of the economy, and GDP per capita growth (in percentage) is chosen for the same. A multiple linear regression model is then modelled using these features for each country group/country, running diagnostic checks to test for accuracy, multicollinearity, homoscedasticy and normality of the residuals. The standardized \[\beta\] coefficients of the regressors are compared in order to see the difference between the impacts they have on the respective GDPs. 
+Parameters considered include population growth, income shares between the top and bottom 10\%, the unemployment rates, education as a percentage of government expenditure, military expenditure, refugee population by country of asylum/origin, financial investments, total reserves and employment grouped by gender. The target variable, as mentioned, needs to be a quantitative representative of the economy, and GDP per capita growth (in percentage) is chosen for the same. A multiple linear regression model is then modelled using these features for each country group/country, running diagnostic checks to test for accuracy, multicollinearity, homoscedasticy and normality of the residuals. The standardized beta coefficients of the regressors are compared in order to see the difference between the impacts they have on the respective GDPs. 
 
 The na\"{i}ve assumption made is that some, if not all of these parameters, have different impacts on the economies of developed countries as opposed to developing countries. Contrasting Sub-Saharan and Asian countries with Europe and North America might provide insights as to how the GDP dependencies vary, holding in accordance with the results inferred by Moyer and Hedden \cite{SDG}, with respect to most African countries being termed MVCs (Most Vulnerable Countries) because of lack of achieving most of the Sustainable Development Goals.
 
