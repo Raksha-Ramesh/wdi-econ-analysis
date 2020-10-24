@@ -162,13 +162,9 @@ Government expenditure on education (\% of total government expenditure).
 Given the large amount of data, dating way back to the 60s, it was correctly assumed that the data representing most of the indicators was incredibly sparse. For indicators like government expenditure on education and unemployment, there was barely any or no data recorded until the late 90s or 2000s. In addition to this, using recent data (the last two decades or so) would be able to provide much more relevant insights than data from half a century ago. In order to perform dimensionality reduction, feature selection was used to drop the attributes with more than 
 70\% of the data missing. Other methods of data cleaining, like mean replacement of missing values were also used in order to make the datasets suitable for exploaratory data analysis. Certain specific values had to be manually checked and replaced, like China's GDP per capita growth for 2014 and 2015, as using other methods to estimate this data would be redundant.
 
-\begin{comment}
+%\begin{comment}
 \section{Initial Insights}
-Before deciding on how to go about forecasting and making predictions, 
-exploratory data analysis and cleaning was performed on all the datasets in order to 
-understand the nature of the data. 
-
-The indicators mentioned above were analysed and compared on a global and nation wise scale, in order to find correlations and check for trends and seasonality, along with measuring the best and worst ranked countries with regards to income inequality and education expenditure.\\
+In order to understand the nature of the data, some of the indicators mentioned above were analysed independently and compared on a global and nation wise scale, in order to find correlations and check for trends and seasonality.\\
 \newline
 \textit{Population Growth (in \%) }: The growth of the population can play a very significant role in shaping the economy. On plotting a comparison between population of the world and India, it is seen that the population growth of the world saw a sharp increase in the 1960s, and maintained it until the mid 1970s after which there is a gradual decline. India's growth however, rose gradually up to the mid 1980s, following which there is a steeper decline than that of the world, with India's relative population growth being lesser than that of the world from the early 2010s. 
 
@@ -180,8 +176,7 @@ The indicators mentioned above were analysed and compared on a global and nation
 \end{figure}
 
 In order to find out the causes of this decline, the crude birth and death rates (per 1000 people) aggregated to represent the world were considered. The downward trend of the population growth is reflective of that of the birth and death rates as well; however the birth rate was found to be decreasing more sharply than the death rate. 
-
-R-values for world population growth with respect to birth and death rates were found to be 0.952 and 0.745 respectively,  which solidifies the claim that the decline is population growth is more likely due to the declining birth rate rather than the death rate.\\
+This is corroborated by the R-values calculated for world population growth with respect to birth and death, to be 0.952 and 0.745 respectively.\\
 
 \textit{Unemployment}: The unemployment rate is measured as a fraction of the total labour force of a country/ the world. It is a closely watched indicator and can have a cascading effect that ripples through a country’s economy, often during recessions. The graph shows a comparison between the United States, Germany, China and India.
 
@@ -194,6 +189,7 @@ R-values for world population growth with respect to birth and death rates were 
 
 Germany seems to have fared very well when compared to the other heavy weight economies over the last fifteen years, and now has the smallest unemployment rate amongst the four, at around 3\% of its total workforce. The United States has a predictable curve, with unemployment peaking in 2009 and 2010, which followed right after the Wall Street crash of 2008. However, the rate has declined over the last ten years, standing at around 4.8\% in 2019. Unemployment rates of India, China and the world at large have remained constant over the last two decades, with India’s unemployment almost reflecting that of the world’s.\\
 
+\begin{comment}
 \textit{Income Share}: he income share held by the top and bottom 10\% of a country is a great indicator to see the disparities in the wealth distribution of the country.
 
 To dig deeper into the income gap, the Countries where the top 10\% took the biggest income shares were compared with their own bottom 10\%.
@@ -206,7 +202,7 @@ To dig deeper into the income gap, the Countries where the top 10\% took the big
 \end{figure}
 
 It is important to notice Brazil. The Top 10\% hold close to 45\% of the income share whereas the bottom 10\% barely holds an aggregate of 1\%, which highlights the increasing wealth disparity in developing nations.\\
-
+\end{comment}
 \textit{GDP per Capita Growth (in \%)}:  This indicator explains the growth rate of GDP per capita or the rate of increase of income per person. The following indicates the GDP per capita growth rate for India as a comparison with some of the most developed countries. There is a sharp decline around 2008-2009 for all countries which is explained by the 2008 financial crisis that took the world by storm. Despite the US being a leading contributor to the crisis, it is seen that Russia was the worst hit. Until the financial crisis, China seems to be on an exponential rise, after which the growth rate has steadied.
 
 \begin{figure}[htp]
@@ -227,10 +223,10 @@ It is important to notice Brazil. The Top 10\% hold close to 45\% of the income 
 
 Here, it can be observed that Singapore dipped drastically to ~18\% between 2008-2010 in terms of educational expenditure. However, their lowest was still far above India’s expenditure on the same. It can be seen that India has remained fairly constant within the bracket of 10-15\% in the last 2 decades.
 
-\end{comment}
+%\end{comment}
 
 
-\section{Problem Statement and Proposed Solution}
+\section{Problem Statement and Approach}
 
 On initial exploratory data analysis, the need for a comparison between countries becomes imperative. The problem statement involves measuring the influence certain parameters have had on the economy (represented here by the growth in GDP per capita) for the last few decades, for the world at large and for individual countries, and country groups. 
 

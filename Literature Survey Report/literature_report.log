@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.16)  18 OCT 2020 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.16)  18 OCT 2020 18:14
 entering extended mode
 **"d:/PESU/Sem 5/Data Analytics/DataAnalytics/Literature Survey Report/literature_report.tex"
 ("d:/PESU/Sem 5/Data Analytics/DataAnalytics/Literature Survey Report/literature_report.tex"
@@ -464,7 +464,11 @@ File: biblatex.cfg
 ))
 \@quotelevel=\count399
 \@quotereset=\count400
- ("d:/PESU\Sem 5\Data Analytics\DataAnalytics\Literature Survey Report\literature_report.aux")
+ ("d:/PESU\Sem 5\Data Analytics\DataAnalytics\Literature Survey Report\literature_report.aux"
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+)
 \openout1 = `literature_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -526,7 +530,48 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 100.
  (D:\Software\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2] [3]
+) [2]
+Underfull \hbox (badness 10000) in paragraph at lines 167--170
+
+ []
+
+<Images//popGrowth1.png, id=17, 297.11pt x 206.7725pt>
+File: Images//popGrowth1.png Graphic file (type png)
+<use Images//popGrowth1.png>
+Package pdftex.def Info: Images//popGrowth1.png  used on input line 173.
+(pdftex.def)             Requested size: 227.62204pt x 158.42023pt.
+
+Underfull \hbox (badness 1997) in paragraph at lines 178--180
+\OT1/ptm/m/n/10 birth and death rates (per 1000 peo-ple) ag-gre-gated to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+ []
+
+[3]
+<Images//unemp.png, id=22, 358.84062pt x 218.8175pt>
+File: Images//unemp.png Graphic file (type png)
+<use Images//unemp.png>
+Package pdftex.def Info: Images//unemp.png  used on input line 185.
+(pdftex.def)             Requested size: 227.62204pt x 138.80399pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+<Images//gdpcap.png, id=23, 488.32437pt x 286.06876pt>
+File: Images//gdpcap.png Graphic file (type png)
+<use Images//gdpcap.png>
+Package pdftex.def Info: Images//gdpcap.png  used on input line 210.
+(pdftex.def)             Requested size: 227.62204pt x 133.3436pt.
+<Images//indsing.png, id=24, 355.3275pt x 262.48062pt>
+File: Images//indsing.png Graphic file (type png)
+<use Images//indsing.png>
+Package pdftex.def Info: Images//indsing.png  used on input line 219.
+(pdftex.def)             Requested size: 199.16928pt x 147.12833pt.
+[4 <d:/PESU/Sem 5/Data Analytics/DataAnalytics/Literature Survey Report/Images//popGrowth1.png> <d:/PESU/Sem 5/Data Analytics/DataAnalytics/Literature Survey Report/Images//unemp.png> <d:/PESU/Sem 5/Data Analytics/DataAnalytics/Literature Survey Report/Images//gdpcap.png> <d:/PESU/Sem 5/Data Analytics/DataAnalytics/Literature Survey Report/Images//indsing.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -538,23 +583,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] ("d:/PESU\Sem 5\Data Analytics\DataAnalytics\Literature Survey Report\literature_report.aux")
+[5] ("d:/PESU\Sem 5\Data Analytics\DataAnalytics\Literature Survey Report\literature_report.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'literature_report.run.xml'.
 \openout1 = `literature_report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11413 strings out of 480236
- 202839 string characters out of 2892803
- 914611 words of memory out of 3000000
- 27865 multiletter control sequences out of 15000+200000
+ 11442 strings out of 480236
+ 203391 string characters out of 2892803
+ 915677 words of memory out of 3000000
+ 27888 multiletter control sequences out of 15000+200000
  566154 words of font info for 85 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,8n,67p,1215b,1311s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Software/MikTex/fonts/enc/dvips/base/8r.enc}<D:/Software/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Software/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Software/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Software/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Software/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Software/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/Software/MikTex/fonts/type1/urw/times/utmbi8a.pfb><D:/Software/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/Software/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "d:/PESU\Sem 5\Data Analytics\DataAnalytics\Literature Survey Report\literature_report.pdf" (4 pages, 121871 bytes).
+Output written on "d:/PESU\Sem 5\Data Analytics\DataAnalytics\Literature Survey Report\literature_report.pdf" (5 pages, 540997 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
