@@ -10,3 +10,5 @@ SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force) (modeled ISO estimate)"
 SP.DYN.CBRT.IN,"Birth Rate, crude (per 1000 people)"
 SP.DYN.CDRT.IN,"Death Rate, crude (per 1000 people)"
 SP.DYN.LE00.IN,"Life expectancy at birth, total (years)"
+SI.POV.DDAY,Poverty headcount ratio at $1.90 a day (% of population)
+MS.MIL.XPND.GD.ZS,Military expenditure (% of GDP)
