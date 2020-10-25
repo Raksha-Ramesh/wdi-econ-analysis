@@ -1,0 +1,32 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             gdp_percap   R-squared:                       0.159
+Model:                            OLS   Adj. R-squared:                 -0.015
+Method:                 Least Squares   F-statistic:                    0.9128
+Date:                Sun, 25 Oct 2020   Prob (F-statistic):              0.500
+Time:                        17:22:24   Log-Likelihood:                -97.746
+No. Observations:                  36   AIC:                             209.5
+Df Residuals:                      29   BIC:                             220.6
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                32.3192     33.785      0.957      0.347     -36.780     101.418
+gini_index            0.0518      0.305      0.170      0.866      -0.571       0.675
+unemployment          0.2268      0.208      1.088      0.285      -0.199       0.653
+life_expectancy      -0.3892      0.389     -0.999      0.326      -1.186       0.407
+pop_growth            1.2461      0.930      1.340      0.191      -0.655       3.147
+poverty_headcount    -1.3592      2.286     -0.594      0.557      -6.035       3.317
+mil_expend           -1.3773      0.728     -1.893      0.068      -2.865       0.111
+==============================================================================
+Omnibus:                       63.009   Durbin-Watson:                   2.016
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              587.037
+Skew:                           3.937   Prob(JB):                    3.36e-128
+Kurtosis:                      21.148   Cond. No.                     4.35e+03
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.35e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
