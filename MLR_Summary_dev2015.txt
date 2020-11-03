@@ -3,8 +3,8 @@
 Dep. Variable:             gdp_percap   R-squared:                       0.159
 Model:                            OLS   Adj. R-squared:                 -0.015
 Method:                 Least Squares   F-statistic:                    0.9128
-Date:                Wed, 28 Oct 2020   Prob (F-statistic):              0.500
-Time:                        22:39:21   Log-Likelihood:                -97.746
+Date:                Tue, 03 Nov 2020   Prob (F-statistic):              0.500
+Time:                        22:28:58   Log-Likelihood:                -97.746
 No. Observations:                  36   AIC:                             209.5
 Df Residuals:                      29   BIC:                             220.6
 Df Model:                           6                                         
