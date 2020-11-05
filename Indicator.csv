@@ -1,14 +1,17 @@
-Indicator_Code,Indicator_Name
-SP.POP.GROW,Population Growth (in %)
-SI.POV.GINI,Gini Index
-NY.GDP.PCAP.KD.ZG,GDP per capita growth (in %)
-SE.XPD.TOTL.GB.ZS,"Government expenditure on education, total (% of government expenditure)"
-SE.XPD.TOTL.GD.ZS,"Government expenditure on education, total (% of GDP)"
-SI.DST.FRST.10,Income share held by lowest 10%
-SI.DST.10TH.10,Income share held by highest 10%
-SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force) (modeled ISO estimate)"
-SP.DYN.CBRT.IN,"Birth Rate, crude (per 1000 people)"
-SP.DYN.CDRT.IN,"Death Rate, crude (per 1000 people)"
-SP.DYN.LE00.IN,"Life expectancy at birth, total (years)"
-SI.POV.DDAY,Poverty headcount ratio at $1.90 a day (% of population)
-MS.MIL.XPND.GD.ZS,Military expenditure (% of GDP)
+Indicator_Code,Indicator_Name,included,feature_name
+SP.POP.GROW,Population Growth (in %),1,pop_grow
+SI.POV.GINI,Gini Index,1,gini_index
+NY.GDP.PCAP.KD.ZG,GDP per capita growth (in %),1,gdp_percap
+SE.XPD.TOTL.GB.ZS,"Government expenditure on education, total (% of government expenditure)",0,
+SE.XPD.TOTL.GD.ZS,"Government expenditure on education, total (% of GDP)",0,
+SI.DST.FRST.10,Income share held by lowest 10%,0,
+SI.DST.10TH.10,Income share held by highest 10%,0,
+SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force) (modeled ISO estimate)",1,unemp
+SP.DYN.CBRT.IN,"Birth Rate, crude (per 1000 people)",0,
+SP.DYN.CDRT.IN,"Death Rate, crude (per 1000 people)",0,
+SP.DYN.LE00.IN,"Life expectancy at birth, total (years)",1,life_exp
+SI.POV.DDAY,Poverty headcount ratio at $1.90 a day (% of population),1,poverty
+MS.MIL.XPND.GD.ZS,Military expenditure (% of GDP),1,mil_xpnd
+SE.ADT.LITR.ZS,"Literacy Rate, adult total",1,lit_rate
+SL.TLF.TOTL.IN,"Labour force, total",1,labour_force
+SM.POP.REFG,Refguee population by country of asylum,1,refugee_asylum
