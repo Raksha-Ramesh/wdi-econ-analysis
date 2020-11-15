@@ -88,10 +88,13 @@ def checkLinearRelationship(df):
         plt.scatter(df[j],df.gdp_percap)
         plt.show()
 
-def createSplits(index, dev): # index indicates the year i.e. 2010-2018 is mapped to 0-9
+def createSplits(index, dev, size): # index indicates the year i.e. 2010-2018 is mapped to 0-9
     devyear = dev[index]
     gdpyeardev = devyear[['gdp_percap']]
     devyear = devyear.drop(columns=['country','gdp_percap'])
 
-    X_train, X_test, y_train, y_test = train_test_split(devyear,gdpyeardev,test_size=0.15, random_state=0)
+    if size==0:
+        return(devyear,gdpyeardev)
+
+    X_train, X_test, y_train, y_test = train_test_split(devyear,gdpyeardev,test_size=size, random_state=0)
     return (X_train, X_test, y_train, y_test)
