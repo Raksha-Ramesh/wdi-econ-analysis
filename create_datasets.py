@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os 
 from sklearn.model_selection import train_test_split
 
-years = [str(i) for i in range(2010,2018)]
+years = [str(i) for i in range(2008,2018)]
 def createData():
     indicatorList = pd.read_csv('Indicator.csv')
 
