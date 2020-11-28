@@ -5,22 +5,22 @@ import os
 from sklearn.model_selection import train_test_split
 
 years = [str(i) for i in range(2008,2018)]
-def createData():
+def createData(): # Function to create datasets for the years
     indicatorList = pd.read_csv('Indicator.csv')
 
     indicatorsToPick = indicatorList[indicatorList['included']==1]
     gdp_percap = indicatorsToPick[indicatorsToPick['feature_name']=='gdp_percap']
     indicatorsToPick = indicatorsToPick.drop(index=2) # GDP is Index 2
 
-    def getDF(code):
-        path = os.getcwd() + "\Datasets\\"
-        newPath = path + code
+    def getDF(indicator_code): # function that takes the indicator code as parameter and returns the respective csv as a dataframe
+        path = os.getcwd() + "\Datasets\\" # Needs to be changed to '/' in Linux systems
+        newPath = path + indicator_code
         df = pd.read_csv(newPath + "\\" + os.listdir(newPath)[0])
         return df
 
     indicators = list(indicatorsToPick.Indicator_Code)
     features = []
-    target = getDF("NY.GDP.PCAP.KD.ZG")
+    target = getDF("NY.GDP.PCAP.KD.ZG") # the indicator for gdp per capita growth
 
     for i in indicators:
         features.append(getDF(i))
